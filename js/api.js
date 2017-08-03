@@ -11,7 +11,7 @@ $(function() {
                 
             }.bind(this));
 
-            $.getJSON('http://api.etherscan.io/api?module=contract&action=getabi&address=0x2c39F92294F436c956F12dCd801a3181e77F8851', function (data) {
+            $.getJSON('https://api.etherscan.io/api?module=contract&action=getabi&address=0x2c39F92294F436c956F12dCd801a3181e77F8851', function (data) {
                 var contractABI = "";
                 contractABI = JSON.parse(data.result);
                 if (contractABI != '') {
