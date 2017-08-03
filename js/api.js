@@ -1,7 +1,7 @@
 $(function() {
         try {
             var Web3 = require('web3');
-            var web3 = new Web3(new Web3.providers.HttpProvider("http://pub-node1.etherscan.io:8545"));
+            var web3 = new Web3(new Web3.providers.HttpProvider("https://pub-node1.etherscan.io:8545"));
             var version = web3.version.api;
             var count;
 
