@@ -7,7 +7,7 @@ $(function() {
 
             $.getJSON('https://api.etherscan.io/api?module=account&action=tokenbalance&contractaddress=0x2c39f92294f436c956f12dcd801a3181e77f8851&address=0x2c39f92294f436c956f12dcd801a3181e77f8851&tag=latest&apikey=VZEIQ7N8AJDXPKNWP21HB1BG5WNXEU535R', function (jsonData) {
                 count = jsonData.result;
-                $('#weresold').html(2100000000000000-count);
+                $('#weresold').html((2100000000000000-count)/100000000);
                 
             }.bind(this));
 
